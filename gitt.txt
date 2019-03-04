@@ -1,9 +1,25 @@
 Git config --global user.name "username anda"
 Git config --global user.email "email anda"
-Git init
-Git add *
+Git init #untuk membuat repositori git baru.
+Git add * #Ini merupakan langkah awal alur-kerja dasar git. Untuk komit sepenuhnya gunakan
 Git Commit -m "komen terbaru"
 Git remote add origin https://github.com/danairwanda/test.git #untuk remote github
 Git pull origin master #ambil file dari github
 Git push origin master #upload file dari local
+Git merge #menggabungkan file
+
+
+git clone https://github.com/libgit2/libgit2 #online
+git clode C:/users/edo/testgit #local
+
+git diff <cabang_asal> <cabang_tujuan> #pratinjau
+git tag 1.0.0 1b2e1d63ff #1b2e1d63ff adalah 10 karakter pertama dari identitas komit yang ingin kamu referensikan ke penanda. Kamu bisa mendapatkan identitas komit dengan melihat git log
 Git Log #lihat aktifitas
+git log --author=bob #Untuk melihat komit penulis tertentu
+git log --pretty=oneline #Untuk melihat log yang dimampatkan, satu baris per komit:
+git log --graph --oneline --decorate --all #pohon ASCII art seluruh percabangan disertai nama dan penandanya
+git log --name-status #Sekedar melihat berkas yang berubah
+git checkout -- <namaberkas> #perintah di atas mengembalikan perubahan di dalam pokok kerja kamu dengan konten terakhir dari HEAD.
+#Jika kamu ingin menggugurkan perubahan dan komit lokal seutuhnya, ambil riwayat terakhir dari server dan arahkan ke cabang master lokal seperti ini
+git fetch origin
+git reset --hard origin/master
