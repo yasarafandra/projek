@@ -6,4 +6,4 @@ Git Commit -m "komen terbaru"
 Git remote add origin https://github.com/danairwanda/test.git #untuk remote github
 Git pull origin master #ambil file dari github
 Git push origin master #upload file dari local
-php
+Git Log #lihat aktifitas
